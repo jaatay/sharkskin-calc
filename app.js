@@ -8,7 +8,8 @@ form.addEventListener('submit' , (event) => {
     event.preventDefault();
    var x = parseInt(form.elements[1].value);
    var answer = (x/shark);
+   answer = answer.toFixed(2);
 
-   cost.innerHTML = `Your item costs ${answer} sharks.`;
+   cost.innerHTML = `Your dream costs ${answer} sharks.`;
 
 });
